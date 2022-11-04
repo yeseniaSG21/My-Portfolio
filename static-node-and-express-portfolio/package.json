@@ -1,0 +1,16 @@
+{
+  "name": "Yesenia-portfolio",
+  "version": "1.0.0",
+  "description": "Using Static Node.js and Express Site to construct a portfolio of past projects built",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yesenia Sosa Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
