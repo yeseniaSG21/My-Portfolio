@@ -21,6 +21,32 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+//Create project routes
+app.get("/project/:id", (req, res, next) => {
+    if (projects[req.params.id]) {
+        res.render("project", { project: projects[req.params.id] });
+    } else {
+        next();
+    }
+});
+
+//404 and global error handlers
+app.use((req, res, next) => {
+    const err = new Error("Page not found!");
+    err.status = 404;
+    next(err);
+});
+
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    if (err.status === 404) {
+        console.log(`Something went wrong. Status: ${err.status}`);
+        res.render("page-not-found");
+    } else {
+        res.render("error");
+    }
+});
+
 //Set up local server and print a message to terminal
 app.listen(3000, () => {
     console.log('The application is running on localhost:3000! It works!!');
