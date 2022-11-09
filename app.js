@@ -8,6 +8,10 @@ const { projects } = require('./data.json');
 //Setting up middleware
 app.set('view engine', 'pug');
 
+//Create index route
+app.get('/', (req, res) => {
+    res.render('index', { projects });
+});
 
 //Set up local server and print a message to terminal
 app.listen(3000, () => {
