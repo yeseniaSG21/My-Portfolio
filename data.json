@@ -8,6 +8,42 @@
             "live_link": "",
             "github_link": "",
             "image_urls": ""
+        },
+        {
+            "id": "1",
+            "project_name": "Random Quote Generator",
+            "description": "",
+            "technologies": "",
+            "live_link": "",
+            "github_link": "",
+            "image_urls": ""
+        },
+        {
+            "id": "2",
+            "project_name": "Random Quote Generator",
+            "description": "",
+            "technologies": "",
+            "live_link": "",
+            "github_link": "",
+            "image_urls": ""
+        },
+        {
+            "id": "3",
+            "project_name": "Random Quote Generator",
+            "description": "",
+            "technologies": "",
+            "live_link": "",
+            "github_link": "",
+            "image_urls": ""
+        },
+        {
+            "id": "4",
+            "project_name": "Random Quote Generator",
+            "description": "",
+            "technologies": "",
+            "live_link": "",
+            "github_link": "",
+            "image_urls": ""
         }
     ]
 }
