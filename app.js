@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
     res.render('index', { projects });
 });
 
+//Create the about route
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
 //Set up local server and print a message to terminal
 app.listen(3000, () => {
     console.log('The application is running on localhost:3000! It works!!');
