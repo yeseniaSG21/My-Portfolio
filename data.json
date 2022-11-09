@@ -3,7 +3,7 @@
         {
             "id": "0",
             "project_name": "Random Quote Generator",
-            "description": "This project will diplay a random quote on the screen in increments of 5 seconds or by clicking the button. The background color will change as the quote changes",
+            "description": "This project will diplay a random quote on the screen in increments of 5 seconds or by clicking the button. The background color will change as the quote changes.",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "",
             "github_link": "",
@@ -12,8 +12,8 @@
         {
             "id": "1",
             "project_name": "Data Pagination Webpage",
-            "description": "",
-            "technologies": "",
+            "description": "This project created a way to paginate through a pages/displays of student data. This makes navigating large amounts of students data easier and gives the user pagination buttons to click through the displays in groups of 9.",
+            "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
             "live_link": "",
             "github_link": "",
             "image_urls": ""
@@ -21,8 +21,8 @@
         {
             "id": "2",
             "project_name": "Interactive Form",
-            "description": "",
-            "technologies": "",
+            "description": "This project created a form to collect information for users to register for a conference. There is a section for basic info, conference t-shirt info, and what workshop the user would like to attend. The final part of the form will direct the user to pay for the conference along with any workshops they choose.",
+            "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "REGEX"],
             "live_link": "",
             "github_link": "",
             "image_urls": ""
@@ -30,8 +30,8 @@
         {
             "id": "3",
             "project_name": "Phrase Guessing Game",
-            "description": "",
-            "technologies": "",
+            "description": "This project created a hidden phrase game, where players try to guess by clicking letters on an onscreen keyboard. From a list of 5 pre-chosen phrases, the player will be given a new random phrase each time they play.",
+            "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "OOP"],
             "live_link": "",
             "github_link": "",
             "image_urls": ""
@@ -39,8 +39,8 @@
         {
             "id": "4",
             "project_name": "API Employee Directory",
-            "description": "",
-            "technologies": "",
+            "description": "This project builds an app for a fictional company called Awesome Startup. It will serve as an employees directory to share contact information with each other.",
+            "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Node.js", "Pug", "Fetch and Public API Requests"],
             "live_link": "",
             "github_link": "",
             "image_urls": ""
