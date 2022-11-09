@@ -8,6 +8,9 @@ const { projects } = require('./data.json');
 //Setting up middleware
 app.set('view engine', 'pug');
 
+//Add static middleware
+app.use(express.static('public'));
+
 //Create index route
 app.get('/', (req, res) => {
     res.render('index', { projects });
