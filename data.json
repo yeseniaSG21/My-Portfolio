@@ -23,8 +23,8 @@
             "project_name": "Interactive Form",
             "description": "This project created a form to collect information for users to register for a conference. There is a section for basic info, conference t-shirt info, and what workshop the user would like to attend. The final part of the form will direct the user to pay for the conference along with any workshops they choose.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "REGEX"],
-            "live_link": "",
-            "github_link": "",
+            "live_link": "https://yeseniasg21.github.io/Interactive-Form/",
+            "github_link": "https://github.com/yeseniaSG21/Interactive-Form",
             "image_urls": ""
         },
         {
@@ -32,8 +32,8 @@
             "project_name": "Phrase Guessing Game",
             "description": "This project created a hidden phrase game, where players try to guess by clicking letters on an onscreen keyboard. From a list of 5 pre-chosen phrases, the player will be given a new random phrase each time they play.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "OOP"],
-            "live_link": "",
-            "github_link": "",
+            "live_link": "https://yeseniasg21.github.io/Word-Guessing-Game/",
+            "github_link": "https://github.com/yeseniaSG21/Word-Guessing-Game",
             "image_urls": ""
         },
         {
@@ -41,8 +41,8 @@
             "project_name": "API Employee Directory",
             "description": "This project builds an app for a fictional company called Awesome Startup. It will serve as an employees directory to share contact information with each other.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Node.js", "Pug", "Fetch and Public API Requests"],
-            "live_link": "",
-            "github_link": "",
+            "live_link": "https://yeseniasg21.github.io/API-Employee-Directory/",
+            "github_link": "https://github.com/yeseniaSG21/API-Employee-Directory",
             "image_urls": ""
         }
     ]
