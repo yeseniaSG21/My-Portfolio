@@ -1,6 +1,7 @@
 //Import Express and set up the app
 const express = require('express');
 const app = express();
+const router = express.Router();
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -12,7 +13,7 @@ const { projects } = require('./data.json');
 app.set('view engine', 'pug');
 
 //Add static middleware
-app.use(express.static('public'));
+app.use('/static', express.static('public'));
 
 //Create index route
 app.get('/', (req, res) => {
@@ -26,8 +27,9 @@ app.get('/about', (req, res) => {
 
 //Create project routes
 app.get("/project/:id", (req, res, next) => {
+    const { id } = req.params;
     if (projects[req.params.id]) {
-        res.render("project", { project: projects[req.params.id] });
+        res.render("project", { project: projects[id] });
     } else {
         next();
     }
