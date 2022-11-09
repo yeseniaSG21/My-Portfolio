@@ -181,11 +181,11 @@ nav a span {
 
 .header {
   vertical-align: middle;
-  color: #fefefe;
+  color: black ;
   height: 40px;
   padding: 0.5rem;
-  background: #0a0a0a;
-  border-left: 1px solid #0a0a0a;
+  background: rgba(112, 206, 225, 0.831);
+  border-left: 1px solid rgba(112, 206, 225, 0.831);
 }
 
 .header span {
@@ -201,11 +201,11 @@ nav a span {
   width: 20px;
   height: 16px;
   border: none;
-  background: #0a0a0a;
+  background: rgba(112, 206, 225, 0.831);
   margin-top: 3px;
   margin-right: 10px;
-  border-top: 2px solid #fefefe;
-  border-bottom: 2px solid #fefefe;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .header button:after {
@@ -215,7 +215,7 @@ nav a span {
   left: 0;
   width: 20px;
   height: 2px;
-  background: #fefefe;
+  background: black;
 }
 
 
