@@ -12,3 +12,6 @@ This project is focused on creating a portfolio site to showcase the great proje
     * Set up the middleware to utilize static files like CSS
     * Handle errors
     * Set up a server to serve the project
+
+## Things to note:
+* Folders, example-html and mockups, are examples and templates followed prior to beginning the project.
