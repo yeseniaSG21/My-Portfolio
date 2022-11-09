@@ -3,15 +3,15 @@
         {
             "id": "0",
             "project_name": "Random Quote Generator",
-            "description": "",
-            "technologies": "",
+            "description": "This project will diplay a random quote on the screen in increments of 5 seconds or by clicking the button. The background color will change as the quote changes",
+            "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "",
             "github_link": "",
             "image_urls": ""
         },
         {
             "id": "1",
-            "project_name": "Random Quote Generator",
+            "project_name": "Data Pagination Webpage",
             "description": "",
             "technologies": "",
             "live_link": "",
@@ -20,7 +20,7 @@
         },
         {
             "id": "2",
-            "project_name": "Random Quote Generator",
+            "project_name": "Interactive Form",
             "description": "",
             "technologies": "",
             "live_link": "",
@@ -29,7 +29,7 @@
         },
         {
             "id": "3",
-            "project_name": "Random Quote Generator",
+            "project_name": "Phrase Guessing Game",
             "description": "",
             "technologies": "",
             "live_link": "",
@@ -38,7 +38,7 @@
         },
         {
             "id": "4",
-            "project_name": "Random Quote Generator",
+            "project_name": "API Employee Directory",
             "description": "",
             "technologies": "",
             "live_link": "",
