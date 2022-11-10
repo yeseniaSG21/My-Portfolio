@@ -29,7 +29,7 @@ app.get('/about', (req, res) => {
 app.get("/project/:id", (req, res, next) => {
     const { id } = req.params;
     if (projects[req.params.id]) {
-        res.render("project", { project: projects[id] });
+        res.render("project", { projects: projects[id] });
     } else {
         next();
     }
