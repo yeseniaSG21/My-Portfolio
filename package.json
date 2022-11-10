@@ -4,6 +4,7 @@
   "description": "Using Static Node.js and Express Site to construct a portfolio of past projects built",
   "main": "app.js",
   "scripts": {
+    "start" : "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
