@@ -12,23 +12,23 @@ block content
       .project-info-box.box
 
 
-        h1= projects.project_name
+        h1= project.project_name
 
-        p= projects.description
+        p= project.description
 
       .project-tech-links-box.box
         h6 Technologies
         ul
-          each technology in projects.technologies
+          each technology in project.technologies
             li= technology
 
-        a.btn-link(href=`${projects.live_link}`) Live Demo
-        a.btn-link(href=`${projects.github_link}`) GitHub Repo
+        a.btn-link(href=`${project.live_link}`) Live Demo
+        a.btn-link(href=`${project.github_link}`) GitHub Repo
 
     .project-img-box.box
 
-      img.project-img(src=`${projects.img_urls[1]}`, alt=`screenshot of ${projects.project_name}`)
-      img.project-img(src=`${projects.img_urls[2]}`, alt=`screenshot of ${projects.project_name}`)
+      img.project-img(src=`${project.img_urls[1]}`, alt=`screenshot of ${project.project_name}`)
+      img.project-img(src=`${project.img_urls[2]}`, alt=`screenshot of ${project.project_name}`)
 
     nav.nav
       a(href='/')
