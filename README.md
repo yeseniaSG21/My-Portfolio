@@ -15,3 +15,4 @@ This project is focused on creating a portfolio site to showcase the great proje
 
 ## Things to note:
 * Folders, example-html and mockups, are examples and templates followed prior to beginning the project.
+* In terminal, type "node app.js" to start localhost:3000 to view homepage.
