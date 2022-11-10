@@ -34,23 +34,24 @@ app.get('/project/:id', (req, res, next) => {
     } else {
         const err = new Error();
         err.status = 404;
-        err.message = "Unfortunately the page you are looking for is not found. Return to Homepage.";
+        err.message = "Unfortunately the page you are looking for is not found. Please return to the homepage.";
         next(err);
     }
 });
 
-//GET generated error route and throw 500 server error
-app.get('/error', (req, res, next) => {
+//GET generated error route and throw error
+app.use((req, res, next) => {
     const err = new Error();
-    err.message = "Uh no! Looks like something went wrong on the server. Return to Homepage.";
-    err.status = 500;
-    throw err;
+    err.message = "Uh no! Looks like that page does not exist. Please return to the homepage.";
+    err.status = 404;
+    next(err);
 });
 
 app.use((req, res, next) => {
     res.status(404).render('page-not-found');
 });
 
+//Global Error Handler
 app.use((err, req, res, next) => {
     if (err) {
         console.log('Global error handler called', err);
