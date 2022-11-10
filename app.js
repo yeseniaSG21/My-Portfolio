@@ -26,7 +26,7 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
-//Create project routes
+//Create project routes and provide error message if no project id matches 
 app.get('/project/:id', (req, res, next) => {
     if (projects[req.params.id]) {
         res.render("project", { projects: projects[req.params.id] });
@@ -42,7 +42,7 @@ app.get('/project/:id', (req, res, next) => {
 app.get('/error', (req, res, next) => {
     const err = new Error();
     err.status = 500;
-    err.message = "Unknown status: 500 Error.";
+    err.message = "Uh no! Looks like something went wrong on the server. Return to Homepage.";
     throw err;
 });
 
