@@ -39,7 +39,7 @@
         {
             "id": 4,
             "project_name": "API Employee Directory",
-            "description": "This project builds an app for a fictional company called Awesome Startup. It will serve as an employees directory to share contact information with each other.",
+            "description": "This project builds an app for a fictional company called Awesome Startup. It will serve as an employees directory to share contact information with each other. It will use the Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees,” and use that data to build a prototype for an Awesome Startup employee directory.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Node.js", "Pug", "Fetch and Public API Requests"],
             "live_link": "https://yeseniasg21.github.io/API-Employee-Directory/",
             "github_link": "https://github.com/yeseniaSG21/API-Employee-Directory",
