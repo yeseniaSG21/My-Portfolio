@@ -12,9 +12,9 @@ block content
       .project-info-box.box
 
 
-        h1= project.project_name
+        h1= projects.project_name
 
-        p= project.description
+        p= projects.description
 
       .project-tech-links-box.box
         h6 Technologies
@@ -27,7 +27,7 @@ block content
 
     .project-img-box.box
 
-      img.project-img(src=`${projecs.img_urls[1]}`, alt=`screenshot of ${projects.project_name}`)
+      img.project-img(src=`${projects.img_urls[1]}`, alt=`screenshot of ${projects.project_name}`)
       img.project-img(src=`${projects.img_urls[2]}`, alt=`screenshot of ${projects.project_name}`)
 
     nav.nav
