@@ -18,6 +18,7 @@ app.use('/static', express.static('public'));
 
 //Create index route
 app.get('/', (req, res) => {
+    console.log ("Home route called!");
     res.render('index', { projects });
 });
 
@@ -38,11 +39,11 @@ app.get('/project/:id', (req, res, next) => {
     }
 });
 
-//500 and global error handlers
+//GET generated error route and throw 500 server error
 app.get('/error', (req, res, next) => {
     const err = new Error();
-    err.status = 500;
     err.message = "Uh no! Looks like something went wrong on the server. Return to Homepage.";
+    err.status = 500;
     throw err;
 });
 
