@@ -11,7 +11,6 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
 
-
         h1= projects.project_name
 
         p= projects.description
@@ -22,13 +21,13 @@ block content
           each technology in projects.technologies
             li= technology
 
-        a.btn-link(href=`${projects.live_link}`, target ="blank") Live Demo
-        a.btn-link(href=`${projects.github_link}`, target="blank") GitHub Repo
+        a.btn-link(href=`${projects.live_link}` target ='_blank') Live Demo
+        a.btn-link(href=`${projects.github_link}` target='_blank') GitHub Repo
 
     .project-img-box.box
 
-      img.project-img(src=`${projects.img_urls[1]}`, alt=`screenshot of ${projects.project_name}`)
-      img.project-img(src=`${projects.img_urls[2]}`, alt=`screenshot of ${projects.project_name}`)
+      img.project-img(src=`${projects.img_urls[1]}`, alt=`${projects.project_name}`)
+      img.project-img(src=`${projects.img_urls[2]}`, alt=`${projects.project_name}`)
 
     nav.nav
       a(href='/')
