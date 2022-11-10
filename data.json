@@ -43,7 +43,7 @@
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Node.js", "Pug", "Fetch and Public API Requests"],
             "live_link": "https://yeseniasg21.github.io/API-Employee-Directory/",
             "github_link": "https://github.com/yeseniaSG21/API-Employee-Directory",
-            "image_urls": ""
+            "image_urls": ["/static/img/project5-550.png", "/static/img/project5-1200.png"]
         }
     ]
 }
