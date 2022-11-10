@@ -1,8 +1,8 @@
 //Import Express and set up the app
 const express = require('express');
 const app = express();
-const router = express.Router();
 
+const router = express.Router();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -26,10 +26,9 @@ app.get('/about', (req, res) => {
 });
 
 //Create project routes
-app.get("/project/:id", (req, res, next) => {
-    const { id } = req.params;
+app.get('/project/:id', (req, res, next) => {
     if (projects[req.params.id]) {
-        res.render("project", { projects: projects[id] });
+        res.render("project", { projects: projects[req.params.id] });
     } else {
         next();
     }
@@ -37,16 +36,17 @@ app.get("/project/:id", (req, res, next) => {
 
 //404 and global error handlers
 app.use((req, res, next) => {
-    const err = new Error("Page not found!");
+    const err = new Error();
     err.status = 404;
+    err.message = "Unfortunately the page you are looking for is not found. Return to Homepage.";
     next(err);
 });
 
 app.use((err, req, res, next) => {
     res.locals.error = err;
     if (err.status === 404) {
-        console.log(`Something went wrong. Status: ${err.status}`);
-        res.render("page-not-found");
+        console.log(`Something went wrong. Status: ${err.status}. Message: ${err.message}.`);
+        res.render('page-not-found');
     } else {
         res.render("error");
     }
@@ -54,5 +54,5 @@ app.use((err, req, res, next) => {
 
 //Set up local server and print a message to terminal
 app.listen(3000, () => {
-    console.log('The application is running on localhost:3000! It works!!');
+    console.log('The application is running on localhost:3000! It works!! Yey!!');
 });
