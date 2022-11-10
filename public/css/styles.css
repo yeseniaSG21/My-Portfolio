@@ -365,3 +365,14 @@ nav a span {
     max-width: 1200px;
   }
 }
+
+/*
+  Error Images 
+*/
+  .error-img {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
