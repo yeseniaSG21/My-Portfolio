@@ -1,43 +1,43 @@
 {
     "projects": [
         {
-            "id": "0",
+            "id": 0,
             "project_name": "Random Quote Generator",
             "description": "This project will diplay a random quote on the screen in increments of 5 seconds or by clicking the button. The background color will change as the quote changes.",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://yeseniasg21.github.io/techdegree-project-1/",
             "github_link": "https://github.com/yeseniaSG21/techdegree-project-1",
-            "image_urls": ""
+            "image_urls": ["/static/img/project1-550.png", "/static/img/project1-1200.png"]
         },
         {
-            "id": "1",
+            "id": 1,
             "project_name": "Data Pagination Webpage",
             "description": "This project created a way to paginate through a pages/displays of student data. This makes navigating large amounts of students data easier and gives the user pagination buttons to click through the displays in groups of 9.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
             "live_link": "https://yeseniasg21.github.io/techdegree-project-2/",
             "github_link": "https://github.com/yeseniaSG21/techdegree-project-2",
-            "image_urls": ""
+            "image_urls": ["/static/img/project2-550.png", "/static/img/project2-1200.png"]
         },
         {
-            "id": "2",
+            "id": 2,
             "project_name": "Interactive Form",
             "description": "This project created a form to collect information for users to register for a conference. There is a section for basic info, conference t-shirt info, and what workshop the user would like to attend. The final part of the form will direct the user to pay for the conference along with any workshops they choose.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "REGEX"],
             "live_link": "https://yeseniasg21.github.io/Interactive-Form/",
             "github_link": "https://github.com/yeseniaSG21/Interactive-Form",
-            "image_urls": ""
+            "image_urls": ["/static/img/project3-550.png", "/static/img/project3-1200.png"]
         },
         {
-            "id": "3",
+            "id": 3,
             "project_name": "Phrase Guessing Game",
             "description": "This project created a hidden phrase game, where players try to guess by clicking letters on an onscreen keyboard. From a list of 5 pre-chosen phrases, the player will be given a new random phrase each time they play.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "OOP"],
             "live_link": "https://yeseniasg21.github.io/Word-Guessing-Game/",
             "github_link": "https://github.com/yeseniaSG21/Word-Guessing-Game",
-            "image_urls": ""
+            "image_urls": ["/static/img/project4-550.png", "/static/img/project4-1200.png"]
         },
         {
-            "id": "4",
+            "id": 4,
             "project_name": "API Employee Directory",
             "description": "This project builds an app for a fictional company called Awesome Startup. It will serve as an employees directory to share contact information with each other.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Node.js", "Pug", "Fetch and Public API Requests"],
