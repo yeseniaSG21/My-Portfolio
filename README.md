@@ -15,4 +15,6 @@ This project is focused on creating a portfolio site to showcase the great proje
 
 ## Things to note:
 * Folders, example-html and mockups, are examples and templates followed prior to beginning the project.
+* Add error images to error pages with their own CSS property.
+* Change colors within the templates.
 * In terminal, type "node app.js" to start localhost:3000 to view homepage.
