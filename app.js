@@ -1,6 +1,7 @@
 //Import Express and set up the app
 const express = require('express');
 const app = express();
+const path = require("path");
 
 const router = express.Router();
 const bodyParser = require('body-parser');
@@ -9,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Required data from JSON file 
 const { projects } = require('./data.json');
 
-//Setting up middleware
+//Setting up view engine
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 //Add static middleware
@@ -30,25 +32,35 @@ app.get('/project/:id', (req, res, next) => {
     if (projects[req.params.id]) {
         res.render("project", { projects: projects[req.params.id] });
     } else {
-        next();
+        const err = new Error();
+        err.status = 404;
+        err.message = "Unfortunately the page you are looking for is not found. Return to Homepage.";
+        next(err);
     }
 });
 
-//404 and global error handlers
-app.use((req, res, next) => {
+//500 and global error handlers
+app.get('/error', (req, res, next) => {
     const err = new Error();
-    err.status = 404;
-    err.message = "Unfortunately the page you are looking for is not found. Return to Homepage.";
-    next(err);
+    err.status = 500;
+    err.message = "Unknown status: 500 Error.";
+    throw err;
+});
+
+app.use((req, res, next) => {
+    res.status(404).render('page-not-found');
 });
 
 app.use((err, req, res, next) => {
-    res.locals.error = err;
+    if (err) {
+        console.log('Global error handler called', err);
+    }
+
     if (err.status === 404) {
-        console.log(`Something went wrong. Status: ${err.status}. Message: ${err.message}`);
-        res.render('page-not-found');
+        res.status(404).render('page-not-found', { err });
     } else {
-        res.render('error');
+        err.message = err.message || "Uh no! Looks like something went wrong on the server. Return to Homepage.";
+        res.status(err.status || 500).render('error', { err });
     }
 });
 
