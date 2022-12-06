@@ -5,8 +5,8 @@
             "project_name": "Random Quote Generator",
             "description": "This project will diplay a random quote on the screen in increments of 5 seconds or by clicking the button. The background color will change as the quote changes.",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live_link": "https://yeseniasg21.github.io/techdegree-project-1/",
-            "github_link": "https://github.com/yeseniaSG21/techdegree-project-1",
+            "live_link": "https://github.com/yeseniaSG21/Random-Quote-Generator/",
+            "github_link": "https://yeseniasg21.github.io/Random-Quote-Generator/",
             "image_urls": ["/static/img/project1-550.png", "/static/img/project1-1200.png"]
         },
         {
@@ -14,8 +14,8 @@
             "project_name": "Data Pagination Webpage",
             "description": "This project created a way to paginate through a pages/displays of student data. This makes navigating large amounts of students data easier and gives the user pagination buttons to click through the displays in groups of 9.",
             "technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
-            "live_link": "https://yeseniasg21.github.io/techdegree-project-2/",
-            "github_link": "https://github.com/yeseniaSG21/techdegree-project-2",
+            "live_link": "https://github.com/yeseniaSG21/Data-Pagination-and-Filtering-Project/",
+            "github_link": "https://yeseniasg21.github.io/Data-Pagination-and-Filtering-Project/",
             "image_urls": ["/static/img/project2-550.png", "/static/img/project2-1200.png"]
         },
         {
